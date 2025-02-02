@@ -1,0 +1,126 @@
+input {
+    border: 2px solid #E5E7EB;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+/* Make sure validation styling works */
+input:invalid {
+    border: 2px solid red !important;
+}
+
+input:focus {
+    border: 2px solid blue;
+    box-shadow: 2px 3px rgba(0, 0, 255, 0.2);
+}
+
+.knewave-regular {
+    font-family: "Knewave", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.imagContainer{
+    position: relative;
+    flex-basis: 100%;
+}
+.woods {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.overlay {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 100%;
+    height: 20%; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+
+}
+.odin{
+    width: 20%; 
+    height: 70%;
+    opacity: 0.8;
+}
+.odinTitle{
+    font-size: 60px;
+    color: white;
+    margin-top: 10px;
+}
+body{
+    margin : 0;
+}
+.container> div:first-child{
+    flex-basis: 70%;
+}
+
+.container{
+    display: flex;
+}
+
+.form-container{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    /* padding: 20px; */
+}
+
+/* Ensure proportional heights */
+.intro {
+    flex-grow: 1;  /* 1/4 of the space */
+    display: flex;
+    align-items: center; /* Center text vertically */
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.form {
+    flex-grow: 2;  /* 2/4 of the space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center inputs */
+    padding: 20px;
+}
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    width: 100%;
+}
+
+.button {
+    flex-grow: 1;  /* 1/4 of the space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center button */
+    align-items: center;
+}
+
+.grey {
+    background-color: rgba(207, 207, 207, 0.917);
+}
+
+button{
+    border-radius: 5px;
+    font-size: large;
+    color: white;
+    background-color: #596D48;
+}
+a{
+    text-decoration: none;
+    color: #596D48;
+}
+p{
+    font-weight: bolder;
+}
